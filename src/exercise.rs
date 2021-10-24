@@ -149,7 +149,7 @@ path = "{}.rs""#,
                 Command::new("cargo")
                     .args(&["clean", "--manifest-path", CLIPPY_CARGO_TOML_PATH])
                     .args(RUSTC_COLOR_ARGS)
-                    .output()
+            4        .output()
                     .expect("Failed to run 'cargo clean'");
                 Command::new("cargo")
                     .args(&["clippy", "--manifest-path", CLIPPY_CARGO_TOML_PATH])
